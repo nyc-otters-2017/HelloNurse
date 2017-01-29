@@ -7,6 +7,7 @@ class SearchBar extends React.Component {
     event.preventDefault();
     let searchInput = this.refs.searchBar;
     this.props.medData(searchInput.value);
+    console.log("input", searchInput.value)
     searchInput.value = "";
   }
 
