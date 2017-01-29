@@ -1,7 +1,7 @@
 class DocsController < ApplicationController
   def show
-    @doc = Doctor.find(params[:id])
-    render json: @doc if request.xhr?
+    @uid = params[:uid]
+    render component: 'Individual', props: {uid: @uid}
   end
 
   def index
