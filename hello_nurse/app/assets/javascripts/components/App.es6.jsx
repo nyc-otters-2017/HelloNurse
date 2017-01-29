@@ -7,7 +7,7 @@ class App extends React.Component {
 
   medData(searchDoctor) {
     $.ajax({
-      url: `https://api.betterdoctor.com/2016-03-01/doctors?first_name=${searchDoctor}&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=9b916adf7c966d9dce5bb16db9f4b2b2`
+      url: `https://api.betterdoctor.com/2016-03-01/doctors?last_name=${searchDoctor}&location=37.773%2C-122.413%2C100&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=9b916adf7c966d9dce5bb16db9f4b2b2`
     }).done((response) => {
       console.log("ajax response", response.data);
       this.setState({medCollection: response.data})
