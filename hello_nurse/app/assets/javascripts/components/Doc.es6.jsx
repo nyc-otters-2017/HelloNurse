@@ -5,6 +5,8 @@ class Doc extends React.Component {
 
   render() {
     let { first_name, last_name } = this.props.doctorInfo
+    // let { school } = this.props.doctorEdu
+    // let { name } = this.props.doctorPractices
     let { uid } = this.props.doctor
     return(
       <div className="doctor-info">
