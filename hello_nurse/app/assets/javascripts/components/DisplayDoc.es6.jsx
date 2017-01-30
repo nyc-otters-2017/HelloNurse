@@ -6,7 +6,14 @@ class DisplayDoc extends React.Component {
           {
             // console.log("medCollection", this.props.displayDoc)
             this.props.displayDoc.map((doctor) => {
-              return <Doc doctor={doctor} doctorInfo={doctor.profile} />
+              return <Doc doctor={doctor} doctorInfo={doctor.profile}
+                // doctorEdu={doctor.educations[0]}
+                // doctorPractices={
+                //   doctor.practices.forEach(function(practice) {
+                //     console.log(practice);
+                //   })
+                // }
+                     />
             })
           }
         </ul>
